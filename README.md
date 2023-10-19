@@ -18,6 +18,6 @@
 ├─IMG
 ├─JS
 │  └─omikuji.js
-index.html
-README.md
+├─index.html
+└─README.md
 ```
