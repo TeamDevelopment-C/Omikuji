@@ -1,4 +1,4 @@
-# Omikuzi
+# Omikuji
 
 ## おみくじの項目
 
