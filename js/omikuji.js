@@ -33,11 +33,39 @@ class Omikuji{
         // 結果で対応する文章を呼び出し、textに保存
         this.text = textSet.get(this.luck);
     }
+
+    getLuckyItem(){
+        // ラッキーアイテムのリスト
+        var itemList = [
+            "猫のぬいぐるみ",
+            "トラックボールマウス",
+            "ダンベル",
+            "四葉のクローバー",
+            "木彫りのくま",
+            "風船",
+            "ベイブレード",
+            "リカちゃん人形",
+            "ワイヤレスキーボード",
+            "ボウリングの玉",
+            "USBメモリ",
+            "HDMIケーブル",
+            "タカアシガニ",
+            "藁人形"
+            ];
+
+        // 0~要素数-1までのランダムな整数を生成
+        var randomLuckyItemNumber = Math.floor(Math.random() * itemList.length);
+
+        // 生成した整数を利用して結果を取得、結果をluckyItemに保存
+        this.luckyItem = itemList[randomLuckyItemNumber];
+    }
 }
 
 // テスト用
 // var test = new Omikuji();
 // test.getLuck();
 // test.getText();
+// test.getLuckyItem();
 // console.log(test.luck);
 // console.log(test.text);
+// console.log(test.luckyItem);
