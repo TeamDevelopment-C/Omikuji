@@ -7,6 +7,7 @@ class Omikuji{
         this.recommendedWorkLocation = null;
     }
 
+    // 運勢を決める
     getLuck(){
         // おみくじの中身を決める
         var luckList = ["大吉", "中吉", "小吉", "小吉", "小吉", "吉", "吉", "吉", "吉", "末吉",
@@ -19,6 +20,7 @@ class Omikuji{
         this.luck = luckList[randomLuckNumber];
     }
 
+    // 運勢に応じたTextを取得
     getText(){
         // 結果に応じた文章をMapオブジェクトに格納しておく
         const textSet = new Map();
@@ -34,6 +36,7 @@ class Omikuji{
         this.text = textSet.get(this.luck);
     }
 
+    // ラッキーアイテムを取得
     getLuckyItem(){
         // ラッキーアイテムのリスト
         var itemList = [
@@ -60,6 +63,7 @@ class Omikuji{
         this.luckyItem = itemList[randomLuckyItemNumber];
     }
 
+    // ラッキーエディタの取得
     getLuckyEditor(){
         // ラッキーエディタのリスト
         var editorList = [
@@ -82,15 +86,42 @@ class Omikuji{
         // 生成した整数を利用して結果を取得、結果をluckyItemに保存
         this.luckyEditor = editorList[randomLuckyEditorNumber];
     }
+
+    // おすすめの作業場所の取得
+    getRecommendedWorkLocation(){
+        // 作業場所のリスト
+        var workLocationList = [
+            "家",
+            "学校・会社",
+            "図書館",
+            "カフェ",
+            "公園",
+            "電車",
+            "コワーキングスペース",
+        ];
+
+        // 0~要素数-1までのランダムな整数を生成
+        var randomLocationNumber = Math.floor(Math.random() * workLocationList.length);
+
+        // 生成した整数を利用して結果を取得、結果をrecomendedWorkLocationに保存
+        this.recommendedWorkLocation = workLocationList[randomLocationNumber];
+    }
+
+    // 上記の関数を実行する関数
+    drawAFortuneSlip(){
+        this.getLuck();
+        this.getText();
+        this.getLuckyItem();
+        this.getLuckyEditor();
+        this.getRecommendedWorkLocation();
+    }
 }
 
 // テスト用
-var test = new Omikuji();
-test.getLuck();
-test.getText();
-test.getLuckyItem();
-test.getLuckyEditor();
-console.log(test.luck);
-console.log(test.text);
-console.log(test.luckyItem);
-console.log(test.luckyEditor);
+// var test = new Omikuji();
+// test.drawAFortuneSlip();
+// console.log(test.luck);
+// console.log(test.text);
+// console.log(test.luckyItem);
+// console.log(test.luckyEditor);
+// console.log(test.recommendedWorkLocation);
