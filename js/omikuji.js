@@ -59,13 +59,38 @@ class Omikuji{
         // 生成した整数を利用して結果を取得、結果をluckyItemに保存
         this.luckyItem = itemList[randomLuckyItemNumber];
     }
+
+    getLuckyEditor(){
+        // ラッキーエディタのリスト
+        var editorList = [
+            "Visual Studio Code",
+            "Atom",
+            "Eclipse",
+            "Xcode",
+            "Emacs",
+            "Vim",
+            "メモ帳",
+            "サクラエディタ",
+            "Sublime Text",
+            "秀丸エディタ",
+            "TeraPad",
+            ];
+
+        // 0~要素数-1までのランダムな整数を生成
+        var randomLuckyEditorNumber = Math.floor(Math.random() * editorList.length);
+
+        // 生成した整数を利用して結果を取得、結果をluckyItemに保存
+        this.luckyEditor = editorList[randomLuckyEditorNumber];
+    }
 }
 
 // テスト用
-// var test = new Omikuji();
-// test.getLuck();
-// test.getText();
-// test.getLuckyItem();
-// console.log(test.luck);
-// console.log(test.text);
-// console.log(test.luckyItem);
+var test = new Omikuji();
+test.getLuck();
+test.getText();
+test.getLuckyItem();
+test.getLuckyEditor();
+console.log(test.luck);
+console.log(test.text);
+console.log(test.luckyItem);
+console.log(test.luckyEditor);
