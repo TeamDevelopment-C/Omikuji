@@ -13,11 +13,19 @@
 ## ファイル構造
 
 ```bash
-├─CSS
-│  └─style.css 
-├─IMG
-├─JS
-│  └─omikuji.js
-├─index.html
+├─css
+│  ├─index.css 
+│  └─result.css
+├─html
+│  ├─index.html
+│  ├─result.html
+│  └─select.html
+├─img
+│  └─scenery.png
+├─js
+│  ├─main.js
+│  ├─omikuji.js
+│  ├─result.js
+│  └─select_box.js
 └─README.md
 ```
