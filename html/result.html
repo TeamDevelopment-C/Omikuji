@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>おみくじの札</title>
-    <link rel="stylesheet" href="result.css">
-    <script src="../js/omikuji.js" defer></script>
+    <link rel="stylesheet" href="../css/result.css">
+    <script src="../js/omikuji.js" ></script>
+    <script src="../js/result.js" ></script>
+    <script src="../js/main.js" ></script>
 </head>
 <body>
 
@@ -20,8 +22,15 @@
         <div class="description2" id="description2"></div> <!--結果を入れる-->
         <div class="line"></div>
         <div class="description3" id="description3"></div> <!--結果を入れる-->
+        <div class="line"></div>
+        <div class="description3" id="description4"></div> <!--結果を入れる-->
     </div>
 </div>
-
+<script>
+    window.addEventListener('load', function() {
+      // main.jsのrunFirst()を実行
+      runFirst();
+    });
+  </script>
 </body>
 </html>
