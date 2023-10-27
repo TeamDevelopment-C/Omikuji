@@ -1,4 +1,11 @@
 # Omikuji
+## 概要
+Recursionの初心者チーム開発でソフトウェア開発運勢おみくじを作成しました。
+その日の開発に対するモチベーションの上昇や、良い息抜きになれば良いなと考えております。
+
+## URL
+
+
 
 ## おみくじの項目
 
@@ -29,3 +36,8 @@
 │  └─select_box.js
 └─README.md
 ```
+
+## 開発メンバー
+- [yamamoto99](https://github.com/yamamoto99)
+- [penpenpe5tan](https://github.com/penpenpe5tan)
+- [SHUNNTARO](https://github.com/SHUNNTARO)
