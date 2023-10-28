@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform: translateX(-14px);
 }
 
 .label, .result, .description1, .description2, .description3 {
@@ -48,4 +49,31 @@ body {
     background-color: #DAA520;
     margin: 0;
 }
+
+
+
+.back-button-container button {
+    background-color: #DAA520; 
+    border: none; 
+    border-radius: 5px; 
+    color: #FFF5E1; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+.back-button-container button:hover {
+    transform: scale(1.05); 
+    background-color: #B8860B; 
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; 
+    transform: translateX(-14px);
+    
+}
+
 
