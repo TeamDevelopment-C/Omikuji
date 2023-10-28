@@ -10,8 +10,8 @@ body {
 }
 
 .happy {
-    width: 240px;
-    height: 600px;
+    width: 280px;
+    height: 900px;
     border: 2px solid #DAA520;
     border-radius: 10px;
     background-color: rgba(255,245,225,0.85); 
@@ -27,6 +27,7 @@ body {
 
 .label, .result, .description1, .description2, .description3 {
     padding: 10px;
+    margin: 0;
     flex: 1;
     display: flex;
     align-items: center;
@@ -46,4 +47,9 @@ body {
     height: 3px;
     background-color: #DAA520;
     margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 10px;
 }
