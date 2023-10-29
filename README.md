@@ -19,7 +19,7 @@ https://teamdevelopment-c.github.io/Omikuji/index.html
 ```
 
 ## 理想のファイル構造
-
+フォルダにしまっているとうまくデプロイできなかったため、全部出しました(´・ω・)
 ```bash
 ├─css
 │  ├─index.css 
