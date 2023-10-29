@@ -6,7 +6,7 @@ Recursionの初心者チーム開発でソフトウェア開発運勢おみく�
 ## URL
 https://teamdevelopment-c.github.io/Omikuji/index.html
 
-## DEMO
+
 
 ## おみくじの項目
 
