@@ -30,7 +30,7 @@ function createOmikujiResult(omikuji){
         const hashTag = "#RecursionCS #おみくじ ";
 
         // おみくじへのリンクを作成
-        const omikujiUrl = 'https://omikuji';
+        const omikujiUrl = 'https://teamdevelopment-c.github.io/Omikuji/index.html';
 
         // ツイート用リンクを作成
         const tweetLink = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText + hashTag + omikujiUrl);
