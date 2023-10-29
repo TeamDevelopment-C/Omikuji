@@ -18,7 +18,7 @@ https://teamdevelopment-c.github.io/Omikuji/index.html
 おすすめの作業場所
 ```
 
-## ファイル構造
+## 理想のファイル構造
 
 ```bash
 ├─css
